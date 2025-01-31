@@ -86,3 +86,77 @@ drop table oppimine
 
 insert into oppimine (aine, aasta, opetaja, opilaneId, hinne)
 values ('Programmeerimine', 2025-01-15, 'Marina_Oleinik', 1, 5), ('Andmebaas', 2025-01-28, 'Irina_Merkulova', 2, 4)
+
+
+XAMPP&SQL
+create table Category (
+idCategory int Primary key identity(1,1),
+CategoryName varchar(25) unique
+);
+select * from Category;
+insert into Category (CategoryName)
+Values ('sporditoitumine'), ('maiustused'), ('teravilja');
+
+-- TABELI struktuuri muutmine-->uue veergu lisamine
+ALTER TABLE Category add test int;
+
+--table struktuuri muutmine-->veergu kustutamine
+aLter table Category drop column test;
+select * from Category;
+
+Create table Product(
+idProduct int Primary key identity(1,1),
+ProductName varchar (30),
+idCategory int,
+foreign key (idCategory) references Category(idCategory),
+Price decimal (6,2));
+
+drop table Product
+
+Insert into Product(ProductName, idCategory, Price)
+values ('vesi', 1, 0.50), ('leib', 2, 1.09);
+
+select * from Product;
+select * from Category;
+select * from Sale;
+
+Insert into Product(ProductName, idCategory, Price)
+values ('Coca cola', 1, 2.00);
+
+create table Sale(
+idSale int primary key identity(1,1),
+idProduct int,
+foreign key (idProduct) references Product(idProduct),
+idCustomer int,
+Count_ int,
+DateOfSale Date);
+
+--kustutab kõik kirjed
+delete from Sale
+
+Create table Customer (
+idCustomer int primary key identity(1,1),
+Name varchar (25),
+contact text)
+
+--tabeli muutmine -->FK lisamine
+Alter table Sale Add foreign key (idCustomer)
+references Customer(idCustomer)
+--tabeli Customer  täitmine
+--tabeli Sale Täitmine
+
+Insert into Customer(Name, contact)
+values ('Mariia', '+37258638564');
+
+Insert into Sale(idProduct, idCustomer, Count_, DateOfSale)
+values (5, 5, 1, '2025-01-29');
+
+update Customer set DateOfSale=2025-01-30
+where idProduct=1
+
+drop table Sale
+select * from Product;
+select * from Category;
+select * from Sale;
+select * from Customer;
+delete from Sahere idProduct=1;
