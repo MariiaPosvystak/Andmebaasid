@@ -59,3 +59,44 @@ where linnNimi like @taht + '%';
 end;
 --kutse
 exec linnaOtsing T;
+
+--tabeli uuendamine - rahvaarv kasvab 10%võrra 
+update linn set rahvaArv=rahvaArv*1.1;
+select * from linn
+update linn set rahvaArv=rahvaArv*1.1
+where linnId=2;
+
+create procedure rahvuArvuUuendus
+@linnId int,
+@koef decimal(2,1)
+as
+begin
+select * from linn;
+update linn set rahvaArv=rahvaArv*@koef
+where linnId=@linnId;
+select * from linn;
+end;
+drop procedure rahvuArvuUuendus
+exec rahvuArvuUuendus 2, 1.2;
+
+--------------------------------------------------------------------------
+
+kasutame XAMPP / localhost
+use protseduurPosvystak;
+Create table linn(
+linnId int Primary key AUTO_INCREMENT,
+linnNimi varchar(30),
+rahvaArv int);
+Insert into linn(linnNimi, rahvaArv)
+values ('Pärnu', 30000), ('Rakvere', 1284), ('Maardu', 9658), ('Tallinn', 60000), ('Tartu', 50000), ('Narva', 45000);
+{create procedure lisaLinn
+@lnimi varchar (30),
+@rArv int
+as
+begin
+Insert into linn(linnNimi, rahvaArv)
+values (@lnimi, @rArv);
+select * from linn;
+end;}
+
+
