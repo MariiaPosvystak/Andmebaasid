@@ -165,3 +165,17 @@ select * from linn;
 end;}
 
 
+create table Raamatatud(
+Id int Primary key AUTO_INCREMENT,
+Pealkiri varchar (30),
+Autor varchar (30),
+Aasta int);
+insert into Raamatatud(Pealkiri, Autor, Aasta)
+values ('Nad mõlemad surevad lõpus', 'Adam Silvera', 2017), 
+('Mara ja Morok', 'Lea Arden', 2020),
+('Kuus varest', 'Lee Bardugo', 2015),
+('Korrumpeerunud kuningriik', 'Lee Bardugo', 2016),
+('Neljas tiivas', 'Rebecca Jarros', 2023),
+('Raudne leek', 'Rebecca Jarros', 2024),
+('Imetlene nõid', 'Anna Jane', 2020),
+('Armunud nõid', 'Anna Jane', 2022);
