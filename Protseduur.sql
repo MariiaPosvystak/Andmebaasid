@@ -79,6 +79,71 @@ end;
 drop procedure rahvuArvuUuendus
 exec rahvuArvuUuendus 2, 1.2;
 
+Create table linn(
+linnId int Primary key identity(1,1),
+linnNimi varchar(30),
+rahvaArv int);
+Select * from linn;
+Insert into linn(linnNimi, rahvaArv)
+values ('Pärnu', 30000), ('Rakvere', 1284), 
+('Maardu', 9658), ('Tallinn', 60000), 
+('Tartu', 50000), ('Narva', 45000);
+
+-- uue veeru lisamine
+alter table  linn add test int;
+
+-- veeru kustutamine
+alter table linn drop column test;
+create procedure veeruLisaKustuta
+@valik varchar (20),
+@tabelinimi varchar (20),
+@veeruNimi varchar (20),
+@tyyp varchar (20) =null
+as
+begin
+declare @sqltegevus as varchar(max)
+set @sqltegevus=case
+when @valik='add' then concat ('alter table ', @tabelinimi, ' add ', @veeruNimi, ' ', 
+@tyyp)
+when @valik='drop' then concat ('alter table ', @tabelinimi, ' drop column ', @veeruNimi)
+end;
+print @sqltegevus;
+begin
+Exec (@sqltegevus)
+end;
+end;
+
+drop procedure veeruLisaKustuta
+--kutse
+exec veeruLisaKustuta @valik='add', @tabelinimi='linn', @veeruNimi='col', @tyyp='int';
+select * from linn;
+
+exec veeruLisaKustuta @valik='drop', @tabelinimi='linn', @veeruNimi='col', @tyyp=' ';
+select * from linn;
+
+--protseduur tingimusega
+create procedure rahvahinnang
+@piir int
+as
+begin 
+select linnNimi, rahvaArv, iif(rahvaArv<@piir, 'väike linn', 'suur linn') as Hinnang
+from linn;
+end;
+drop procedure rahvahinnang;
+exec rahvahinnang 2000;
+
+--Agregaat funktsioonid: sum(), AVG(), min(), max(), count()
+
+create procedure kokkuRahvaarv
+
+as
+begin
+select Sum(rahvaArv) as 'kokku rahvaArv', avg(rahvaArv) as 'keskmine rahvaArv'
+from linn;
+end;
+
+exec kokkuRahvaarv;
+select * from linn;
 --------------------------------------------------------------------------
 
 kasutame XAMPP / localhost
