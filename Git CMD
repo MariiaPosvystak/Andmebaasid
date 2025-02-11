@@ -1,0 +1,17 @@
+Git CMD käsud
+>cd dekstor
+>cd ..
+>c:
+
+git config --global user.name "mariiaposvystak" -- git süsteemis salvesta nimi
+git config --global user.email "posvystakmariia@gmail.com"
+git config --global --list
+git clone git@github.com:IrinaMerkulova/TARpv24andmebaasTerms.git
+git status
+git branch MariiaPosvystak
+git checkout MariiaPosvystak
+git status
+git add
+git commit -a -m "Nimi on lisatud"
+git status
+git push
