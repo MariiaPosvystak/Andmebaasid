@@ -1,0 +1,161 @@
+create database koolPosvystak;
+use koolPosvystak;
+create table opilane (
+	opilaneId INT primary key,
+	eesnimi VARCHAR(50),
+	perenimi VARCHAR(50),
+	epost VARCHAR(50),
+	sugu VARCHAR(50),
+	stip DECIMAL(5,2)
+);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (1, 'Lilla', 'Varley', 'lvarley0@amazon.co.uk', 'Female', 66.77);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (2, 'Anna-diana', 'Grimbleby', 'agrimbleby1@aol.com', 'Female', 20.67);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (3, 'Kain', 'Leavens', 'kleavens2@elpais.com', 'Male', 38.81);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (4, 'Sela', 'Simenon', 'ssimenon3@symantec.com', 'Female', 27.64);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (5, 'Cyb', 'Steffans', 'csteffans4@nbcnews.com', 'Female', 10.48);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (6, 'Barry', 'Terbruggen', 'bterbruggen5@woothemes.com', 'Male', 40.16);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (7, 'Dennis', 'Brashier', 'dbrashier6@yolasite.com', 'Male', 50.17);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (8, 'Verge', 'Dallan', 'vdallan7@newyorker.com', 'Male', 11.28);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (9, 'Albert', 'Tizard', 'atizard8@webeden.co.uk', 'Male', 3.59);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (10, 'Juan', 'Galletly', 'jgalletly9@weibo.com', 'Male', 54.07);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (11, 'Glen', 'Ohms', 'gohmsa@linkedin.com', 'Female', 71.11);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (12, 'Rikki', 'Kesby', 'rkesbyb@vinaora.com', 'Female', 23.78);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (13, 'Adrianna', 'Wickmann', 'awickmannc@miibeian.gov.cn', 'Female', 35.94);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (14, 'Joellyn', 'Fendlen', 'jfendlend@nsw.gov.au', 'Female', 34.08);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (15, 'Idelle', 'Coaker', 'icoakere@boston.com', 'Female', 64.72);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (16, 'Meredithe', 'Galiero', 'mgalierof@microsoft.com', 'Female', 21.02);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (17, 'Griff', 'Gillooly', 'ggilloolyg@flickr.com', 'Male', 54.44);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (18, 'Issy', 'Colisbe', 'icolisbeh@reddit.com', 'Female', 4.65);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (19, 'Syman', 'Siseland', 'ssiselandi@dion.ne.jp', 'Male', 80.12);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (20, 'Sully', 'Wragge', 'swraggej@domainmarket.com', 'Male', 96.85);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (21, 'Jessalyn', 'Bygraves', 'jbygravesk@nba.com', 'Female', 36.19);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (22, 'Conchita', 'Otson', 'cotsonl@boston.com', 'Female', 40.36);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (23, 'Birgit', 'Fynn', 'bfynnm@cbslocal.com', 'Female', 92.87);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (24, 'Renee', 'Bousfield', 'rbousfieldn@loc.gov', 'Female', 49.91);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (25, 'Franzen', 'Polye', 'fpolyeo@washington.edu', 'Male', 37.94);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (26, 'Fernanda', 'Gooday', 'fgoodayp@zdnet.com', 'Female', 10.56);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (27, 'Holden', 'Emnoney', 'hemnoneyq@qq.com', 'Genderqueer', 14.03);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (28, 'Lief', 'Mc Corley', 'lmccorleyr@patch.com', 'Male', 8.93);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (29, 'Alano', 'Troucher', 'atrouchers@quantcast.com', 'Non-binary', 3.23);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (30, 'Noelle', 'Jenkerson', 'njenkersont@pbs.org', 'Female', 85.9);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (31, 'Reamonn', 'Parlott', 'rparlottu@is.gd', 'Male', 67.44);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (32, 'Neville', 'Cerith', 'ncerithv@statcounter.com', 'Male', 52.36);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (33, 'Gill', 'Harg', 'ghargw@webeden.co.uk', 'Male', 34.28);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (34, 'Mackenzie', 'Kinlock', 'mkinlockx@furl.net', 'Male', 39.73);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (35, 'Shurlock', 'Ellicock', 'sellicocky@zdnet.com', 'Male', 35.27);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (36, 'Ariel', 'Klugman', 'aklugmanz@army.mil', 'Male', 50.22);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (37, 'Jenny', 'Yearby', 'jyearby10@ed.gov', 'Female', 2.47);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (38, 'Reynolds', 'Cotterel', 'rcotterel11@tumblr.com', 'Male', 65.22);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (39, 'Sheffie', 'Cello', 'scello12@china.com.cn', 'Male', 73.73);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (40, 'Ber', 'Crain', 'bcrain13@guardian.co.uk', 'Male', 69.9);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (41, 'Marleah', 'Kissock', 'mkissock14@miibeian.gov.cn', 'Female', 37.72);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (42, 'Bartel', 'Klinck', 'bklinck15@zimbio.com', 'Male', 28.67);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (43, 'Liuka', 'Hopkynson', 'lhopkynson16@cnbc.com', 'Genderqueer', 64.78);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (44, 'Annadiana', 'Hibbart', 'ahibbart17@wiley.com', 'Female', 94.78);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (45, 'Wright', 'Hurl', 'whurl18@twitpic.com', 'Male', 75.13);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (46, 'Terrel', 'Hamshar', 'thamshar19@jugem.jp', 'Male', 25.19);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (47, 'Barbaraanne', 'Habishaw', 'bhabishaw1a@printfriendly.com', 'Female', 92.26);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (48, 'Guthry', 'Murfill', 'gmurfill1b@upenn.edu', 'Male', 3.89);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (49, 'Rivy', 'Fleming', 'rfleming1c@godaddy.com', 'Female', 4.69);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (50, 'Gregorius', 'Beville', 'gbeville1d@epa.gov', 'Male', 23.64);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (51, 'Eduard', 'Sawtell', 'esawtell1e@cloudflare.com', 'Genderqueer', 19.96);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (52, 'Quinta', 'Moorman', 'qmoorman1f@jugem.jp', 'Female', 11.08);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (53, 'Genovera', 'Valentinuzzi', 'gvalentinuzzi1g@zdnet.com', 'Female', 9.77);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (54, 'Forester', 'Mc Gee', 'fmcgee1h@example.com', 'Male', 34.29);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (55, 'Wilt', 'Braunds', 'wbraunds1i@zimbio.com', 'Male', 47.26);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (56, 'Alexandr', 'Winpenny', 'awinpenny1j@msn.com', 'Male', 34.51);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (57, 'Daisey', 'Romeril', 'dromeril1k@epa.gov', 'Female', 3.05);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (58, 'Jeniffer', 'Corbert', 'jcorbert1l@msn.com', 'Female', 86.61);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (59, 'Land', 'Cottle', 'lcottle1m@nifty.com', 'Male', 51.6);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (60, 'Paco', 'Lanceley', 'planceley1n@mozilla.com', 'Agender', 11.19);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (61, 'Guinna', 'Lytton', 'glytton1o@whitehouse.gov', 'Female', 39.27);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (62, 'Waldo', 'Cothey', 'wcothey1p@livejournal.com', 'Male', 64.16);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (63, 'Beatrisa', 'Mumby', 'bmumby1q@mozilla.com', 'Female', 75.98);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (64, 'Garner', 'St Leger', 'gstleger1r@globo.com', 'Male', 64.07);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (65, 'Gannon', 'Mannie', 'gmannie1s@xrea.com', 'Male', 32.1);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (66, 'Modesta', 'Doggett', 'mdoggett1t@amazon.co.jp', 'Female', 38.7);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (67, 'Frederick', 'Egre', 'fegre1u@google.co.jp', 'Male', 92.23);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (68, 'Patten', 'Ivanenko', 'pivanenko1v@123-reg.co.uk', 'Male', 21.21);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (69, 'Vanny', 'Woolfenden', 'vwoolfenden1w@typepad.com', 'Female', 68.99);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (70, 'Eirena', 'Burnham', 'eburnham1x@purevolume.com', 'Female', 84.34);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (71, 'Tresa', 'Angerstein', 'tangerstein1y@auda.org.au', 'Female', 69.13);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (72, 'Cosetta', 'Elsby', 'celsby1z@shinystat.com', 'Female', 92.13);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (73, 'Norris', 'Andrivot', 'nandrivot20@nifty.com', 'Male', 97.01);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (74, 'Heidi', 'Bagby', 'hbagby21@storify.com', 'Female', 92.4);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (75, 'Wade', 'Lamey', 'wlamey22@github.com', 'Male', 14.02);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (76, 'Dillie', 'Hoggan', 'dhoggan23@digg.com', 'Male', 26.52);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (77, 'Elsinore', 'Schreurs', 'eschreurs24@wikipedia.org', 'Female', 65.08);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (78, 'Joceline', 'Demke', 'jdemke25@github.com', 'Female', 75.82);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (79, 'Town', 'Gallyhaock', 'tgallyhaock26@wufoo.com', 'Male', 9.34);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (80, 'Oren', 'Fowlie', 'ofowlie27@virginia.edu', 'Male', 80.65);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (81, 'Chicky', 'Aicken', 'caicken28@digg.com', 'Male', 5.7);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (82, 'Jermaine', 'Puller', 'jpuller29@odnoklassniki.ru', 'Female', 12.78);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (83, 'Clywd', 'Spalls', 'cspalls2a@army.mil', 'Male', 87.87);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (84, 'Abigail', 'Feldstern', 'afeldstern2b@washington.edu', 'Female', 4.97);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (85, 'Puff', 'Stihl', 'pstihl2c@apple.com', 'Bigender', 58.52);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (86, 'Solly', 'Povall', 'spovall2d@list-manage.com', 'Male', 46.01);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (87, 'Fergus', 'Piesold', 'fpiesold2e@mail.ru', 'Male', 84.52);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (88, 'Aimee', 'McCollum', 'amccollum2f@smh.com.au', 'Genderfluid', 35.31);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (89, 'Bobbie', 'Bussens', 'bbussens2g@histats.com', 'Female', 47.52);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (90, 'Kathryn', 'Dikle', 'kdikle2h@google.cn', 'Female', 38.86);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (91, 'Carmencita', 'Oaker', 'coaker2i@engadget.com', 'Female', 64.73);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (92, 'Kaitlynn', 'Grunwald', 'kgrunwald2j@tripadvisor.com', 'Female', 59.59);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (93, 'Dyanne', 'Albertson', 'dalbertson2k@cnet.com', 'Female', 35.96);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (94, 'Victor', 'Watton', 'vwatton2l@wiley.com', 'Male', 55.66);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (95, 'Ahmad', 'Milsom', 'amilsom2m@soundcloud.com', 'Male', 17.81);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (96, 'Alexandre', 'Normaville', 'anormaville2n@amazon.co.jp', 'Male', 54.08);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (97, 'Eugenius', 'Castlake', 'ecastlake2o@ted.com', 'Male', 89.93);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (98, 'Serena', 'Ridett', 'sridett2p@mysql.com', 'Genderqueer', 48.48);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (99, 'Tirrell', 'MacMenemy', 'tmacmenemy2q@seattletimes.com', 'Male', 75.73);
+insert into opilane (opilaneId, eesnimi, perenimi, epost, sugu, stip) values (100, 'Giffard', 'Blanchet', 'gblanchet2r@freewebs.com', 'Male', 23.63);
+Select * from opilane;
+--kuva ainult kaks veergu tabelist opilane
+Select perenimi, stip from opilane;
+--kuva kolm esimest veergu ja sorteeri andmed stip järgi
+--kasvavas järjekorras - Возростающий, A-->Z
+--kahanevas järjekorras - DESC - Убывающий, Z<--A
+Select opilaneId, eesnimi, perenimi, stip from opilane order by stip;
+Select opilaneId, eesnimi, perenimi, stip from opilane order by stip DESC;
+
+--kuva eesnimi, mis on sorteeritud kahanevas järjekorras
+Select eesnimi from opilane order by eesnimi desc;
+
+--Võrdlused
+--näita eesnimed mis algavad A tähega
+Select eesnimi from opilane where eesnimi like 'A%';
+--näita eesnimed ja perenimed mis algavad A tähega
+Select eesnimi, perenimi from opilane where eesnimi like 'A%' or perenimi like 'A%';
+--näita Õpilased, kellel eesnimed ja pere nimed algavad A tähega
+Select eesnimi, perenimi from opilane where eesnimi like 'A%' and perenimi like 'A%';
+
+--näita  eesnimed, kellel esimene ja viimane täht on sama
+select eesnimi from opilane where left(eesnimi, 1)=right(eesnimi, 1);
+-- < - väiksem kui, > - suurem kui, = - võrdne
+--näita õpilased, kelle sip on suurem kui 50 ja väiksem kui 70
+select perenimi, stip from opilane where stip>50 and stip<70
+--between
+select perenimi, stip from opilane where stip between 50 and 70
+order by perenimi
+--päringus sorteerimine ORDER BY kirjutame viimasena
+
+--Agregaatfunktsioonid -count, sum, avg, min, max
+-- Leia õpilaste arv
+Select count(*) as 'opilaseArv' from opilane;
+
+--Leia keskmine stip
+Select avg(stip) as 'keskmine stip'
+from opilane;
+
+--näita 5 õpilast kõige suurema stipiga
+
+Select top 5 perenimi, stip from opilane 
+order by stip DEsc
+
+--XAMPP kasutame TOP asemel LIMIT
+Select  perenimi, stip from opilane 
+order by stip DEsc limit 5;
+
+--kombineerime tingimused
+eesnimed sisaldavad t ja stip (60;70)
+Select eesnimi, stip from opilane 
+where eesnimi like '%T%' and stip between 60 and 70;
