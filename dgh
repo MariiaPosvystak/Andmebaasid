@@ -1,0 +1,34 @@
+create table movies (
+    id int PRIMARY key AUTO_INCREMENT, 
+    moviesNimi varchar (50), 
+    moviesYear int, 
+    movieDir varchar(50), 
+    movieCost decimal (7,2))
+
+insert into movies (moviesNimi, moviesYear, movieDir, movieCost) values ('Dutchman', 1995, 'Pepe Slafford', 553.76),
+('Saints and Soldiers', 2001, 'Chandal Rosterne', 210.50),
+('Public Enemy, The', 1988, 'Andrea Shinn', 122.74),
+('Mr. Bug Goes to Town (a.k.a. Hoppity Goes to Town)', 1993, 'Estele MacAllan', 542.12),
+('Reach the Rock', 1993, 'Mattie Fishenden', 736.09),
+('Scary Movie', 1994, 'Selestina Hurler', 837.85),
+('Jack and the Cuckoo-Clock Heart (Jack et la mécanique du coeur)', 2004, 'Tybalt Gomm', 459.12),
+('Industrial Symphony No. 1: The Dream of the Brokenhearted', 2006, 'Cletis Pavolillo', 872.67),
+('Passing Fancy (Dekigokoro)', 2000, 'Valentina Orthmann', 449.10),
+('11 Harrowhouse', 1994, 'Denice Boule', 170.95);
+
+
+create table guest(
+    id int primary key AUTO_INCREMENT, 
+    name varchar (20));
+
+
+insert into guest (name) values ('Rogers Ramos'),
+('Silva Khan'),
+('Osborn Yateman'),
+('Jenilee Fiddeman'),
+('Larry Hessing'),
+('Halie Vitte'),
+('Shelba Burberow'),
+('Arlyne Shevels'),
+('Margi Offin'),
+('Sofie Ziem');
