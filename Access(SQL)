@@ -1,0 +1,32 @@
+create database Raamatukodus
+use Raamatukodus
+
+create table students(
+studentId int primary key identity(1,1),
+name varchar(30),
+surname varchar(30),
+birthdate varchar(10),
+gender varchar(10),
+class varchar(3),
+point int);
+
+insert into students(name,surname,birthdate,gender,class,point)
+values('Frankie','Schober','09.09.2009','Male','10A',5),
+('Joy','Kaysor','30.03.2007','Female','12B',5),
+('Rudolf','	Scyne','03.07.2013','Male','7D',5),
+('Alphonse','Clute','06.10.2015','Male','5A',5),
+('Otha','Milvarnie','03.10.2013','Female','7C',5),
+('Traci','Blackford','15.10.2016','Female','3B',5),
+('Sargent','Franca','27.04.2015','Male','4A',5),
+('Olive','De Zuani','11.07.2007','Female','11A',5),
+('Is','Spavins','31.05.2013','Female','7B',5),
+('Benedikt','Galbrait','09.06.2016','Male','3A',5);
+
+create table types(
+typeId int primary key identity(1,1),
+name varchar(40))
+
+insert into types(name)
+values('Ilukirjandus'),('Mittekirjanduslik veebisait'),
+('Religioon'),('Noortekirjandus'),('Õppekirjandus kirjanduss'),
+('Sõnastikud')
